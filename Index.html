@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        header img {
+            width: 130px;
+            height: 110px;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+        .search-container input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .content .boton-morado {
+            width: calc(25% - 20px);
+            margin: 10px;
+        }
+        .boton-morado {
+            display: inline-block;
+            background-color: #800080; /* Color morado */
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            width: 100%;
+        }
+        .boton-morado img {
+            display: block;
+            margin: 0 auto;
+            width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+            height: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+        }
+        .boton-morado span {
+            display: block;
+            margin-top: 5px;
+        }
+        footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin-top: auto;
+        }
+        footer a {
+            color: white;
+            margin: 0 30px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logoindex.jpg" alt="Logo">
+        <h1>Cinthya Sabillón</h1>
+        <img src="https://scontent.fsap15-1.fna.fbcdn.net/v/t39.30808-6/435502980_122121568838069762_3289615336778968144_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGXh8za4TMuXmT72nv9fPsZYBciz-AJOOpgFyLP4Ak46iWyzXbdKEFLf0bnxGms7uQy1KX1oTM8WGjb6YnFtBZz&_nc_ohc=nufAVogGFLkQ7kNvgF1-5L9&_nc_ht=scontent.fsap15-1.fna&oh=00_AYAhnKBESVL0JXJAPQa4N5dvv5b0E5sQJFvw-4HlCNgMXA&oe=66AC63CA" alt="Foto">
+    </header>
+
+    <div class="search-container">
+        <input type="text" placeholder="Buscar...">
+        <input type="submit" value="Buscar">
+    </div>
+
+    <div class="content">
+        <!-- Botones morados -->
+        <a href="Biografia.html" class="boton-morado">
+            <img src="https://www.abc.com.py/resizer/v2/https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fabccolor%2FVAI6L2OCIBDW5F4WBXYQXA7GFY.jpg?auth=6e5a0e773463b41ead303c6a12a8b840b523fb2b96addec4e49f2937d03bfd58&width=770&smart=true">
+            <span>Biografía</span>
+        </a>
+
+        <a href="Mision.html" class="boton-morado">
+            <img src="https://www.veropreviale.com/wp-content/uploads/2023/02/mision-vision-y-valores.svg">
+            <span>Misión</span>
+        </a>
+
+  <a href="Vision.html" class="boton-morado">
+            <img src="https://cdn-icons-png.flaticon.com/512/2421/2421304.png">
+            <span>Visión</span>
+        </a>
+
+  <a href="Actitudes.html" class="boton-morado">
+            <img src="https://cdn-icons-png.flaticon.com/512/993/993489.png">
+            <span>Actitudes</span>
+        </a>
+
+  <a href="Cursosmat.html" class="boton-morado">
+            <img src="https://cdn-icons-png.flaticon.com/512/5847/5847507.png">
+            <span>Juegos</span>
+        </a>
+  <a href="Aptitudes.html" class="boton-morado">
+            <img src="https://cdn-icons-png.flaticon.com/512/746/746963.png">
+            <span>Aptitudes</span>
+        </a>
+  <a href="Tutoriales.html" class="boton-morado">
+            <img src="https://cdn-icons-png.flaticon.com/512/4008/4008703.png">
+            <span>Tutoriales</span>
+        </a>
+  <a href="Con.html" class="boton-morado">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733494.png">
+            <span>Contacto</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com/profile.php?id=61552092869622&mibextid=LQQJ4d" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/c_sabil06?igsh=bmhieG9qemc0eDZh&utm_source=qr.com" target="_blank">Instagram</a>
+    </footer>
+
+    <script>
+        function showInfo(boxNumber) {
+            alert('Información del cuadro ' + boxNumber);
+        }
+    </script>
+</body>
+</html>
